@@ -1,156 +1,3498 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mauvitality</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-body{
-font-family: Arial, sans-serif;
-margin:0;
-padding:0;
-background:#f4f4f4;
-color:#222;
-text-align:center;
-}
+    <title>MAUVITALITY | Bienestar que empieza contigo</title>
 
-header{
-background: linear-gradient(135deg,#1f5f3a,#2e8b57);
-color:white;
-padding:50px 20px;
-}
+    <meta
+        name="description"
+        content="MAUVITALITY. Un espacio para cuidar, fortalecer y explorar las diferentes dimensiones de tu bienestar."
+    >
 
-header h1{
-font-size:48px;
-margin:0;
-}
-
-header p{
-font-size:18px;
-opacity:0.9;
-margin-top:10px;
-}
-
-.tag{
-font-size:14px;
-opacity:0.85;
-margin-top:8px;
-}
-
-.container{
-max-width:850px;
-margin:auto;
-}
-
-.card{
-background:white;
-margin:15px;
-padding:22px;
-border-radius:16px;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
-text-align:left;
-}
-
-h2{
-color:#1f5f3a;
-margin-bottom:10px;
-}
-
-.price{
-font-size:18px;
-font-weight:bold;
-color:#111;
-margin-top:5px;
-}
-
-.note{
-font-size:13px;
-opacity:0.8;
-margin-top:5px;
-}
-
-.btn{
-display:block;
-text-align:center;
-margin-top:15px;
-padding:15px;
-background:#25D366;
-color:white;
-text-decoration:none;
-border-radius:12px;
-font-weight:bold;
-font-size:16px;
-}
-
-footer{
-background:#111;
-color:white;
-padding:20px;
-margin-top:30px;
-font-size:13px;
-}
-</style>
-
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-<header>
-<h1>Mauvitality</h1>
-<p>Nutrición • Hidratación • Bienestar</p>
-<div class="tag">Club móvil de bienestar en movimiento</div>
-</header>
+    <!-- =====================================================
+         EXPERIENCIA DE BIENVENIDA
+    ===================================================== -->
 
-<div class="container">
+    <div id="welcome-screen" class="welcome-screen">
 
-<div class="card">
-<h2>🚗 Concepto</h2>
-<p>
-Mauvitality es un club móvil de bienestar que ofrece opciones de hidratación y nutrición a personas con estilos de vida activos que buscan mantenerse bien durante su jornada diaria.
-</p>
+        <div class="welcome-background"></div>
+
+        <div class="welcome-content">
+
+            <div class="welcome-panel">
+
+                <!-- LOGO -->
+
+                <div class="welcome-logo">
+
+                    <span>BIENVENIDO A</span>
+
+                    <h1>MAUVITALITY</h1>
+
+                    <p>Bienestar que empieza contigo.</p>
+
+                </div>
+
+
+                <!-- =================================================
+                     INTRO
+                ================================================= -->
+
+                <section id="welcome-intro" class="welcome-intro">
+                    <div class="welcome-stories">
+    <div class="welcome-stories-heading">
+        <span>ANTES DE COMENZAR</span>
+        <h3>Quizás encuentres algo de ti en estas historias.</h3>
+        <p>Dos personas, dos momentos diferentes de la vida. Una misma decisión: empezar a cuidarse.</p>
+    </div>
+
+    <div class="welcome-story-grid">
+
+        <article class="welcome-story">
+    <div class="welcome-story-label">Una etapa para descubrirte</div>
+
+    <h4>“Todavía estoy descubriendo quién quiero ser.”</h4>
+
+    <p>
+        Hay días en los que todo parece ir demasiado rápido:
+        estudios, amistades, familia, emociones y decisiones sobre el futuro.
+    </p>
+
+    <p>
+        No tenía todas las respuestas. Solo entendió que podía empezar por algo
+        sencillo: detenerse, escucharse y dar un primer paso.
+    </p>
+
+    <span class="welcome-story-age">Una historia de juventud</span>
+</article>
+
+        <article class="welcome-story">
+    <div class="welcome-story-label">Una etapa para volver a ti</div>
+
+    <h4>“Me acostumbré a estar para todos y olvidé estar para mí.”</h4>
+
+    <p>
+        Trabajo, familia, responsabilidades… la vida fue llenándose de cosas
+        y su propio bienestar quedó para después.
+    </p>
+
+    <p>
+        Hasta que entendió que cuidarse no era dejar de lado a los demás.
+        También era darse un espacio para volver a escucharse.
+    </p>
+
+    <span class="welcome-story-age">Una historia de vida</span>
+</article>
+
+    </div>
+
+    <div class="welcome-stories-closing">
+        <p>
+            Quizás tu historia sea diferente. Y está bien.<br>
+            <strong>Ahora queremos conocer la tuya.</strong>
+        </p>
+    </div>
 </div>
 
-<div class="card">
-<h2>🥤 Bebida Hidratante Premium</h2>
-<p>Opción lista para consumo inmediato durante tu trayecto.</p>
+                    <span class="eyebrow">PUNTO DE PARTIDA</span>
 
-<p class="price">$2.50 por unidad (250 ml)</p>
-<p class="note">Refrescante, práctica y lista para consumo</p>
+                    <h2>
+                        Antes de comenzar, queremos conocerte.
+                    </h2>
+
+                    <p>
+                        No buscamos decirte qué necesitas.
+                        Queremos escucharte y acompañarte desde donde estás.
+                    </p>
+
+                    <p>
+                        Esta breve experiencia nos ayudará a conocer tu punto de partida.
+                    </p>
+
+                    <button
+                        id="start-experience"
+                        class="welcome-button"
+                        type="button"
+                    >
+                        Comenzar
+                    </button>
+
+                </section>
+
+
+                <!-- =================================================
+                     ENCUESTA
+                ================================================= -->
+
+                <section id="welcome-survey" class="welcome-survey">
+
+                    <!-- PROGRESO -->
+
+                    <div class="progress-wrap">
+
+                        <div class="progress-top">
+
+                            <span id="progress-label">
+                                Pregunta 1 de 5
+                            </span>
+
+                            <span id="progress-percent">
+                                20%
+                            </span>
+
+                        </div>
+
+                        <div class="progress-bar">
+
+                            <div
+                                id="progress-fill"
+                                class="progress-fill"
+                            ></div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- =================================================
+                         PREGUNTA 1
+                    ================================================= -->
+
+                    <div
+                        class="question active"
+                        data-question="1"
+                        id="question-1"
+                    >
+
+                        <span class="eyebrow">
+                            PUNTO DE PARTIDA
+                        </span>
+
+                        <h2>
+                            ¿Cómo te sientes actualmente con tu bienestar?
+                        </h2>
+
+                        <p class="question-description">
+                            No hay respuestas buenas o malas.
+                            Solo queremos conocer cómo estás hoy.
+                        </p>
+
+                        <div class="answer-grid">
+
+                            <button
+                                class="answer wellbeing-answer"
+                                type="button"
+                                data-value="Necesito atención"
+                            >
+                                <span class="answer-number">01</span>
+
+                                <span class="answer-title">
+                                    Necesito atención
+                                </span>
+
+                                <span class="answer-description">
+                                    Siento que necesito cuidar algunas áreas.
+                                </span>
+                            </button>
+
+
+                            <button
+                                class="answer wellbeing-answer"
+                                type="button"
+                                data-value="Algo quiero mejorar"
+                            >
+                                <span class="answer-number">02</span>
+
+                                <span class="answer-title">
+                                    Algo quiero mejorar
+                                </span>
+
+                                <span class="answer-description">
+                                    Hay cosas que quisiera cambiar o fortalecer.
+                                </span>
+                            </button>
+
+
+                            <button
+                                class="answer wellbeing-answer"
+                                type="button"
+                                data-value="Estoy en un punto intermedio"
+                            >
+                                <span class="answer-number">03</span>
+
+                                <span class="answer-title">
+                                    Estoy en un punto intermedio
+                                </span>
+
+                                <span class="answer-description">
+                                    Algunas cosas están bien y otras quiero trabajarlas.
+                                </span>
+                            </button>
+
+
+                            <button
+                                class="answer wellbeing-answer"
+                                type="button"
+                                data-value="Me siento bien"
+                            >
+                                <span class="answer-number">04</span>
+
+                                <span class="answer-title">
+                                    Me siento bien
+                                </span>
+
+                                <span class="answer-description">
+                                    Quiero seguir cuidando lo que he construido.
+                                </span>
+                            </button>
+
+
+                            <button
+                                class="answer wellbeing-answer"
+                                type="button"
+                                data-value="Me siento de maravilla"
+                            >
+                                <span class="answer-number">05</span>
+
+                                <span class="answer-title">
+                                    Me siento de maravilla
+                                </span>
+
+                                <span class="answer-description">
+                                    Estoy disfrutando mi momento y quiero seguir creciendo.
+                                </span>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- =================================================
+                         ESTADO POSITIVO
+                    ================================================= -->
+
+                    <div
+                        id="well-state"
+                        class="well-state hidden"
+                    >
+
+                        <div class="well-icon">🌿</div>
+
+                        <span class="eyebrow">
+                            TU PUNTO DE PARTIDA
+                        </span>
+
+                        <h2>¡Qué bueno! 🙌</h2>
+
+                        <p>
+                            Sentirse bien también es un punto de partida.
+                        </p>
+
+                        <p>
+                            Quizás no estás buscando cambiar algo,
+                            sino mantener lo que has construido,
+                            seguir aprendiendo o simplemente descubrir
+                            qué tiene MAUVITALITY para ti.
+                        </p>
+
+                        <div class="well-actions">
+
+                            <button
+                                id="explore-site-now"
+                                class="welcome-button"
+                                type="button"
+                            >
+                                Explorar MAUVITALITY
+                            </button>
+
+                            <button
+                                id="continue-exploring"
+                                class="welcome-button secondary"
+                                type="button"
+                            >
+                                Quiero explorar más
+                            </button>
+
+                            <button
+                                id="share-experience"
+                                class="welcome-button secondary"
+                                type="button"
+                            >
+                                Compartir con alguien
+                            </button>
+
+                        </div>
+
+                        <div
+                            id="share-feedback"
+                            class="share-feedback"
+                        ></div>
+
+                    </div>
+
+
+                    <!-- =================================================
+                         PREGUNTA 2
+                    ================================================= -->
+
+                    <div
+                        class="question"
+                        data-question="2"
+                        id="question-2"
+                    >
+
+                        <span class="eyebrow">
+                            ÁREAS DE TU VIDA
+                        </span>
+
+                        <h2>
+                            ¿Qué áreas de tu vida quieres cuidar,
+                            fortalecer o explorar?
+                        </h2>
+
+                        <p class="question-description">
+                            Puedes elegir una o varias.
+                        </p>
+
+                        <div class="answer-grid">
+
+                            <button
+                                class="answer dimension-answer"
+                                type="button"
+                                data-dimension="Físico"
+                            >
+                                <span class="answer-number">01</span>
+
+                                <span class="answer-title">
+                                    Físico
+                                </span>
+
+                                <span class="answer-description">
+                                    Salud, energía y hábitos.
+                                </span>
+                            </button>
+
+
+                            <button
+                                class="answer dimension-answer"
+                                type="button"
+                                data-dimension="Mental"
+                            >
+                                <span class="answer-number">02</span>
+
+                                <span class="answer-title">
+                                    Mental
+                                </span>
+
+                                <span class="answer-description">
+                                    Pensamientos, aprendizaje y claridad.
+                                </span>
+                            </button>
+
+
+                            <button
+                                class="answer dimension-answer"
+                                type="button"
+                                data-dimension="Emocional"
+                            >
+                                <span class="answer-number">03</span>
+
+                                <span class="answer-title">
+                                    Emocional
+                                </span>
+
+                                <span class="answer-description">
+                                    Emociones, calma y autoestima.
+                                </span>
+                            </button>
+
+
+                            <button
+                                class="answer dimension-answer"
+                                type="button"
+                                data-dimension="Familiar"
+                            >
+                                <span class="answer-number">04</span>
+
+                                <span class="answer-title">
+                                    Familiar
+                                </span>
+
+                                <span class="answer-description">
+                                    Relaciones, comunicación y presencia.
+                                </span>
+                            </button>
+
+
+                            <button
+                                class="answer dimension-answer"
+                                type="button"
+                                data-dimension="Financiero"
+                            >
+                                <span class="answer-number">05</span>
+
+                                <span class="answer-title">
+                                    Financiero
+                                </span>
+
+                                <span class="answer-description">
+                                    Organización, oportunidades y futuro.
+                                </span>
+                            </button>
+
+                        </div>
+
+                        <div class="question-navigation">
+
+                            <button
+                                id="question-2-next"
+                                class="welcome-button"
+                                type="button"
+                                disabled
+                            >
+                                Continuar
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- =================================================
+                         PREGUNTA 3
+                    ================================================= -->
+
+                    <div
+                        class="question"
+                        data-question="3"
+                        id="question-3"
+                    >
+
+                        <span class="eyebrow">
+                            LO QUE TE IMPORTA
+                        </span>
+
+                        <h2>
+                            ¿Qué te gustaría cuidar,
+                            fortalecer o explorar?
+                        </h2>
+
+                        <p class="question-description">
+                            Puedes elegir varias opciones dentro
+                            de las áreas que seleccionaste.
+                        </p>
+
+                        <div
+                            id="dynamic-categories"
+                            class="dynamic-categories"
+                        ></div>
+
+                        <div class="question-navigation">
+
+                            <button
+                                id="question-3-next"
+                                class="welcome-button"
+                                type="button"
+                                disabled
+                            >
+                                Continuar
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- =================================================
+                         PREGUNTA 4
+                    ================================================= -->
+
+                    <div
+                        class="question"
+                        data-question="4"
+                        id="question-4"
+                    >
+
+                        <span class="eyebrow">
+                            TU PRÓXIMO PASO
+                        </span>
+
+                        <h2>
+                            Si pudieras dar un pequeño paso desde hoy,
+                            ¿cuál sería?
+                        </h2>
+
+                        <p class="question-description">
+                            Escríbelo con tus propias palabras.
+                        </p>
+
+                        <div class="goal-box">
+
+                            <textarea
+                                id="personal-goal"
+                                name="personal-goal"
+                                autocomplete="off"
+                                spellcheck="true"
+                                maxlength="300"
+                                placeholder="Por ejemplo: quiero comenzar a cuidar mejor mi alimentación..."
+                            ></textarea>
+
+                            <div
+                                id="character-count"
+                                class="character-counter"
+                            >
+                                0 / 300
+                            </div>
+
+                        </div>
+
+                        <div class="question-navigation">
+
+                            <button
+                                id="question-4-next"
+                                class="welcome-button"
+                                type="button"
+                                disabled
+                            >
+                                Continuar
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- =================================================
+                         PREGUNTA 5
+                    ================================================= -->
+
+                    <div
+                        class="question"
+                        data-question="5"
+                        id="question-5"
+                    >
+
+                        <span class="eyebrow">
+                            TU COMPROMISO
+                        </span>
+
+                        <h2>
+                            ¿Qué tan dispuesto estás a dar ese paso?
+                        </h2>
+
+                        <p class="question-description">
+                            No buscamos perfección. Buscamos progreso.
+                        </p>
+
+                        <div class="answer-grid">
+
+                            <button
+                                class="answer commitment-answer"
+                                type="button"
+                                data-value="1"
+                            >
+                                <span class="answer-number">01</span>
+
+                                <span class="answer-title">
+                                    Necesito comenzar
+                                </span>
+                            </button>
+
+
+                            <button
+                                class="answer commitment-answer"
+                                type="button"
+                                data-value="2"
+                            >
+                                <span class="answer-number">02</span>
+
+                                <span class="answer-title">
+                                    Estoy pensando en hacerlo
+                                </span>
+                            </button>
+
+
+                            <button
+                                class="answer commitment-answer"
+                                type="button"
+                                data-value="3"
+                            >
+                                <span class="answer-number">03</span>
+
+                                <span class="answer-title">
+                                    Estoy dispuesto
+                                </span>
+                            </button>
+
+
+                            <button
+                                class="answer commitment-answer"
+                                type="button"
+                                data-value="4"
+                            >
+                                <span class="answer-number">04</span>
+
+                                <span class="answer-title">
+                                    Estoy bastante dispuesto
+                                </span>
+                            </button>
+
+
+                            <button
+                                class="answer commitment-answer"
+                                type="button"
+                                data-value="5"
+                            >
+                                <span class="answer-number">05</span>
+
+                                <span class="answer-title">
+                                    Estoy totalmente comprometido
+                                </span>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- =================================================
+                         RESULTADO
+                    ================================================= -->
+
+                    <section
+                        id="welcome-result"
+                        class="welcome-result"
+                    >
+
+                        <div class="result-intro">
+
+    <span class="eyebrow">
+        TU PUNTO DE PARTIDA
+    </span>
+
+    <h2>
+        Este puede ser tu comienzo.
+    </h2>
+
+    <p>
+        Gracias por escucharte.
+        Lo que acabas de compartir nos ayuda a entender dónde estás hoy.
+        Desde aquí puedes comenzar, sin prisa y a tu manera.
+    </p>
+
 </div>
 
-<div class="card">
-<h2>📦 Pack Hidratación Premium</h2>
-<p>Producto cerrado para consumo personal o familiar.</p>
 
-<p class="price">$32.87 por unidad</p>
-<p class="note">Opción para consumo continuo dentro de un estilo de vida saludable</p>
-</div>
+                        <div class="result-card">
 
-<div class="card">
-<h2>🌱 Nuestra filosofía</h2>
-<p>
-Creemos que la nutrición adecuada, la hidratación, la actividad física y el descanso son pilares fundamentales del bienestar.
-Nuestro objetivo es ayudar a las personas a incorporar hábitos saludables que contribuyan a su calidad de vida y a su bienestar general.
-</p>
-</div>
+                            <span>Bienestar actual</span>
 
-<div class="card">
-<h2>⚡ Pedido inmediato</h2>
-<p>Solicita tu bebida o producto de forma rápida</p>
+                            <strong id="result-wellbeing">
+                                -
+                            </strong>
 
-<a class="btn" href="https://wa.me/593998668426" target="_blank">
-📲 PEDIR POR WHATSAPP
-</a>
+                        </div>
 
-<p class="note">Atención directa y rápida</p>
-</div>
 
-</div>
+                        <div class="result-card">
 
-<footer>
-Mauvitality © 2026 | Club móvil de bienestar
-</footer>
+                            <span>Áreas que elegiste</span>
+
+                            <p id="result-area">
+                                -
+                            </p>
+
+                        </div>
+
+
+                        <div class="result-card">
+
+                            <span>Lo que quieres cuidar</span>
+
+                            <p id="result-need">
+                                -
+                            </p>
+
+                        </div>
+
+
+                        <div class="result-card">
+
+                            <span>Tu pequeño paso</span>
+
+                            <p id="result-goal">
+                                -
+                            </p>
+
+                        </div>
+
+
+                        <div class="result-card">
+
+                            <span>Tu compromiso</span>
+
+                            <strong id="result-commitment">
+                                -
+                            </strong>
+
+                        </div>
+
+
+                        <label class="consent">
+
+                            <input
+                                id="save-consent"
+                                type="checkbox"
+                            >
+
+                            <span>
+                                Quiero guardar este punto de partida
+                                para continuar mi camino.
+                            </span>
+
+                        </label>
+
+
+                        <div class="result-actions">
+
+                            <button
+                                id="enter-site"
+                                class="welcome-button"
+                                type="button"
+                            >
+                                Entrar a MAUVITALITY
+                            </button>
+
+                        </div>
+
+                    </section>
+
+                </section>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         SITIO PRINCIPAL
+    ===================================================== -->
+
+    <main id="main-site">
+
+
+        <!-- NAVBAR -->
+
+        <nav class="main-nav">
+
+            <div class="nav-inner">
+
+                <a
+                    href="#inicio"
+                    class="brand-logo"
+                >
+                    MAUVITALITY
+                </a>
+
+                <div class="nav-links">
+
+                    <a href="#nosotros">
+                        Nosotros
+                    </a>
+
+                    <a href="#dimensiones">
+                        Dimensiones
+                    </a>
+
+                    <a href="#historias">
+                        Historias
+                    </a>
+
+                    <a href="#experiencias">
+                        Experiencias
+                    </a>
+
+                    <a href="#comunidad">
+                        Comunidad
+                    </a>
+
+                    <button
+                        class="nav-start begin-experience"
+                        type="button"
+                    >
+                        Comenzar
+                    </button>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+        <!-- HERO -->
+
+        <section
+            class="mv-hero"
+            id="inicio"
+        >
+
+            <div class="mv-container hero-grid">
+
+                <div class="hero-content">
+
+                    <span class="section-eyebrow">
+                        MAUVITALITY
+                    </span>
+
+                    <h1>
+                        Bienestar que
+                        <span>empieza contigo.</span>
+                    </h1>
+
+                    <p>
+                        Un espacio para detenerte,
+                        escucharte, descubrir nuevas posibilidades
+                        y avanzar desde donde estás.
+                    </p>
+
+                    <div class="hero-actions">
+
+                        <a
+                            href="#nosotros"
+                            class="btn btn-primary"
+                        >
+                            Conoce MAUVITALITY
+                        </a>
+
+                        <button
+    class="btn btn-primary begin-experience"
+    type="button"
+>
+    Comenzar
+</button> 
+
+                    </div>
+
+                </div>
+
+
+                <div class="hero-visual">
+
+                    <div class="visual-placeholder">
+
+                        <div class="visual-placeholder-icon">
+                            ✦
+                        </div>
+
+                        <span>
+                            ESPACIO PARA IMAGEN O VIDEO REAL
+                        </span>
+
+                        <small>
+                            Aquí vivirá la esencia visual
+                            de MAUVITALITY.
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PUNTO DE PARTIDA -->
+
+        <section
+            class="personal-section"
+            id="mi-punto"
+        >
+
+            <div class="mv-container">
+
+                <div class="personal-header">
+
+                    <span class="section-eyebrow">
+                        TU PUNTO DE PARTIDA
+                    </span>
+
+                    <h2>
+                        Aquí empieza
+                        <span>tu camino.</span>
+                    </h2>
+
+                    <p>
+                        No todos comenzamos desde el mismo lugar.
+                        Esta experiencia se adapta a lo que tú
+                        elegiste compartir.
+                    </p>
+
+                </div>
+
+
+                <div class="personal-card">
+
+                    <div class="personal-intro">
+
+                        <div class="personal-mark">
+                            M
+                        </div>
+
+                        <div>
+
+                            <span>
+                                Tu experiencia
+                            </span>
+
+                            <h3 id="personal-guidance">
+                                Todavía no hemos definido
+                                tu punto de partida.
+                            </h3>
+
+                            <p id="personal-message">
+                                Puedes comenzar la experiencia
+                                cuando quieras.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="personal-data-grid">
+
+                        <div class="personal-data-item">
+
+                            <span>
+                                Bienestar actual
+                            </span>
+
+                            <strong id="personal-wellbeing">
+                                —
+                            </strong>
+
+                        </div>
+
+
+                        <div class="personal-data-item">
+
+                            <span>
+                                Áreas elegidas
+                            </span>
+
+                            <strong id="personal-dimensions">
+                                —
+                            </strong>
+
+                        </div>
+
+
+                        <div class="personal-data-item">
+
+                            <span>
+                                Lo que quieres cuidar
+                            </span>
+
+                            <strong id="personal-needs">
+                                —
+                            </strong>
+
+                        </div>
+
+
+                        <div class="personal-data-item">
+
+                            <span>
+                                Tu pequeño paso
+                            </span>
+
+                            <strong id="personal-goal">
+                                —
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="personal-quote">
+
+                        <span>“</span>
+
+                        Hay personas que comenzaron
+                        desde un lugar parecido al tuyo.
+
+                        <span>”</span>
+
+                    </div>
+
+
+                    <button
+                        class="personal-restart begin-experience"
+                        type="button"
+                    >
+                        Volver a explorar mi experiencia
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- NOSOTROS -->
+
+        <section
+            class="mv-section"
+            id="nosotros"
+        >
+
+            <div class="mv-container">
+
+                <div class="section-heading">
+
+                    <span class="section-eyebrow">
+                        NOSOTROS
+                    </span>
+
+                    <h2>
+                        Acompañamos al ser humano
+                        <span>en su camino.</span>
+                    </h2>
+
+                    <p>
+                        MAUVITALITY nace para crear un espacio
+                        donde las personas puedan detenerse,
+                        escucharse, aprender, compartir y avanzar.
+                    </p>
+
+                </div>
+
+
+                <div class="mv-info-grid">
+
+                    <article class="mv-info-card">
+
+                        <span class="card-number">
+                            01
+                        </span>
+
+                        <h3>
+                            Propósito
+                        </h3>
+
+                        <p>
+                            Acompañar al ser humano respetando
+                            su historia, su realidad y su propio ritmo.
+                        </p>
+
+                    </article>
+
+
+                    <article class="mv-info-card">
+
+                        <span class="card-number">
+                            02
+                        </span>
+
+                        <h3>
+                            Visión
+                        </h3>
+
+                        <p>
+                            Construir una comunidad donde las
+                            personas quieran quedarse y crecer juntas.
+                        </p>
+
+                    </article>
+
+
+                    <article class="mv-info-card">
+
+                        <span class="card-number">
+                            03
+                        </span>
+
+                        <h3>
+                            Misión
+                        </h3>
+
+                        <p>
+                            Cuidar al ser humano,
+                            no solamente una parte de él.
+                        </p>
+
+                    </article>
+
+
+                    <article class="mv-info-card">
+
+                        <span class="card-number">
+                            04
+                        </span>
+
+                        <h3>
+                            Filosofía
+                        </h3>
+
+                        <p>
+                            El bienestar no es una meta.
+                            Es una forma de vivir.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- DIMENSIONES -->
+
+        <section
+            class="mv-section dimensions-section"
+            id="dimensiones"
+        >
+
+            <div class="mv-container">
+
+                <div class="section-heading">
+
+                    <span class="section-eyebrow">
+                        DIMENSIONES
+                    </span>
+
+                    <h2>
+                        Tu bienestar tiene
+                        <span>muchas formas.</span>
+                    </h2>
+
+                    <p>
+                        Explora las áreas que forman parte de tu vida.
+                        Puedes comenzar por una o recorrerlas todas.
+                    </p>
+
+                </div>
+
+
+                <div class="dimension-grid">
+
+                    <button
+                        class="dimension-card"
+                        type="button"
+                        data-dimension="Físico"
+                    >
+
+                        <span class="dimension-icon">
+                            01
+                        </span>
+
+                        <h3>
+                            Físico
+                        </h3>
+
+                        <p>
+                            Movimiento, alimentación,
+                            descanso, energía y cuidado del cuerpo.
+                        </p>
+
+                        <span class="dimension-link">
+                            Explorar →
+                        </span>
+
+                    </button>
+
+
+                    <button
+                        class="dimension-card"
+                        type="button"
+                        data-dimension="Mental"
+                    >
+
+                        <span class="dimension-icon">
+                            02
+                        </span>
+
+                        <h3>
+                            Mental
+                        </h3>
+
+                        <p>
+                            Aprendizaje, claridad, concentración,
+                            hábitos y nuevas posibilidades.
+                        </p>
+
+                        <span class="dimension-link">
+                            Explorar →
+                        </span>
+
+                    </button>
+
+
+                    <button
+                        class="dimension-card"
+                        type="button"
+                        data-dimension="Emocional"
+                    >
+
+                        <span class="dimension-icon">
+                            03
+                        </span>
+
+                        <h3>
+                            Emocional
+                        </h3>
+
+                        <p>
+                            Autoconocimiento, calma,
+                            motivación y relación contigo mismo.
+                        </p>
+
+                        <span class="dimension-link">
+                            Explorar →
+                        </span>
+
+                    </button>
+
+
+                    <button
+                        class="dimension-card"
+                        type="button"
+                        data-dimension="Familiar"
+                    >
+
+                        <span class="dimension-icon">
+                            04
+                        </span>
+
+                        <h3>
+                            Familiar
+                        </h3>
+
+                        <p>
+                            Comunicación, presencia,
+                            vínculos y momentos que importan.
+                        </p>
+
+                        <span class="dimension-link">
+                            Explorar →
+                        </span>
+
+                    </button>
+
+
+                    <button
+                        class="dimension-card"
+                        type="button"
+                        data-dimension="Financiero"
+                    >
+
+                        <span class="dimension-icon">
+                            05
+                        </span>
+
+                        <h3>
+                            Financiero
+                        </h3>
+
+                        <p>
+                            Organización, aprendizaje,
+                            ahorro y nuevas oportunidades.
+                        </p>
+
+                        <span class="dimension-link">
+                            Explorar →
+                        </span>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- HISTORIAS -->
+
+        <section
+            class="mv-section stories-section"
+            id="historias"
+        >
+
+            <div class="mv-container">
+
+                <div class="section-heading">
+
+                    <span class="section-eyebrow">
+                        HISTORIAS
+                    </span>
+
+                    <h2>
+                        Personas reales.
+                        <span>Historias reales.</span>
+                    </h2>
+
+                    <p>
+                        Aquí compartiremos experiencias de personas
+                        que decidieron comenzar desde donde estaban.
+                    </p>
+
+                </div>
+
+
+                <div class="stories-filter">
+
+                    <button
+                        class="story-filter active"
+                        type="button"
+                        data-story-filter="Todos"
+                    >
+                        Todas
+                    </button>
+
+                    <button
+                        class="story-filter"
+                        type="button"
+                        data-story-filter="Físico"
+                    >
+                        Físico
+                    </button>
+
+                    <button
+                        class="story-filter"
+                        type="button"
+                        data-story-filter="Mental"
+                    >
+                        Mental
+                    </button>
+
+                    <button
+                        class="story-filter"
+                        type="button"
+                        data-story-filter="Emocional"
+                    >
+                        Emocional
+                    </button>
+
+                    <button
+                        class="story-filter"
+                        type="button"
+                        data-story-filter="Familiar"
+                    >
+                        Familiar
+                    </button>
+
+                    <button
+                        class="story-filter"
+                        type="button"
+                        data-story-filter="Financiero"
+                    >
+                        Financiero
+                    </button>
+
+                </div>
+
+
+                <div class="stories-grid">
+
+                    <article
+                        class="story-card"
+                        data-story-dimension="Físico"
+                    >
+
+                        <div class="story-placeholder">
+
+                            <span>
+                                HISTORIA REAL
+                            </span>
+
+                            <strong>
+                                Próximamente
+                            </strong>
+
+                        </div>
+
+                        <div class="story-content">
+
+                            <span>
+                                Historia · Físico
+                            </span>
+
+                            <h3>
+                                Un nuevo comienzo
+                            </h3>
+
+                            <div class="story-stages">
+
+                                <span>Antes</span>
+                                <span>Proceso</span>
+                                <span>Hoy</span>
+
+                            </div>
+
+                            <p>
+                                Espacio para compartir una historia
+                                real de manera humana y responsable.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article
+                        class="story-card"
+                        data-story-dimension="Mental"
+                    >
+
+                        <div class="story-placeholder">
+
+                            <span>
+                                HISTORIA REAL
+                            </span>
+
+                            <strong>
+                                Próximamente
+                            </strong>
+
+                        </div>
+
+                        <div class="story-content">
+
+                            <span>
+                                Historia · Mental
+                            </span>
+
+                            <h3>
+                                Volver a encontrar claridad
+                            </h3>
+
+                            <div class="story-stages">
+
+                                <span>Antes</span>
+                                <span>Proceso</span>
+                                <span>Hoy</span>
+
+                            </div>
+
+                            <p>
+                                Una experiencia real podrá vivir aquí.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article
+                        class="story-card"
+                        data-story-dimension="Emocional"
+                    >
+
+                        <div class="story-placeholder">
+
+                            <span>
+                                HISTORIA REAL
+                            </span>
+
+                            <strong>
+                                Próximamente
+                            </strong>
+
+                        </div>
+
+                        <div class="story-content">
+
+                            <span>
+                                Historia · Emocional
+                            </span>
+
+                            <h3>
+                                Aprender a escucharme
+                            </h3>
+
+                            <div class="story-stages">
+
+                                <span>Antes</span>
+                                <span>Proceso</span>
+                                <span>Hoy</span>
+
+                            </div>
+
+                            <p>
+                                Aquí mostraremos procesos reales,
+                                sin promesas ni resultados garantizados.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article
+                        class="story-card"
+                        data-story-dimension="Familiar"
+                    >
+
+                        <div class="story-placeholder">
+
+                            <span>
+                                HISTORIA REAL
+                            </span>
+
+                            <strong>
+                                Próximamente
+                            </strong>
+
+                        </div>
+
+                        <div class="story-content">
+
+                            <span>
+                                Historia · Familiar
+                            </span>
+
+                            <h3>
+                                Volver a conectar
+                            </h3>
+
+                            <div class="story-stages">
+
+                                <span>Antes</span>
+                                <span>Proceso</span>
+                                <span>Hoy</span>
+
+                            </div>
+
+                            <p>
+                                Historias que nos recuerdan que crecer
+                                también puede ser hacerlo juntos.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article
+                        class="story-card"
+                        data-story-dimension="Financiero"
+                    >
+
+                        <div class="story-placeholder">
+
+                            <span>
+                                HISTORIA REAL
+                            </span>
+
+                            <strong>
+                                Próximamente
+                            </strong>
+
+                        </div>
+
+                        <div class="story-content">
+
+                            <span>
+                                Historia · Financiero
+                            </span>
+
+                            <h3>
+                                Dar un primer paso
+                            </h3>
+
+                            <div class="story-stages">
+
+                                <span>Antes</span>
+                                <span>Proceso</span>
+                                <span>Hoy</span>
+
+                            </div>
+
+                            <p>
+                                Un espacio para compartir aprendizajes
+                                y experiencias reales.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <div class="stories-bottom">
+
+                    <strong>
+                        Personas reales. Historias reales.
+                        Progreso real.
+                    </strong>
+
+                    <span>
+                        No buscamos perfección. Buscamos progreso.
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- VIDEOS -->
+
+        <section
+            class="mv-section video-section"
+            id="videos"
+        >
+
+            <div class="mv-container">
+
+                <div class="section-heading">
+
+                    <span class="section-eyebrow">
+                        VIDEO
+                    </span>
+
+                    <h2>
+                        También podemos
+                        <span>conectar a través de historias.</span>
+                    </h2>
+
+                    <p>
+                        Testimonios, experiencias, encuentros
+                        y momentos de nuestra comunidad.
+                    </p>
+
+                </div>
+
+
+                <div class="video-filters">
+
+                    <button
+                        class="video-filter active"
+                        type="button"
+                        data-video-filter="Todos"
+                    >
+                        Todos
+                    </button>
+
+                    <button
+                        class="video-filter"
+                        type="button"
+                        data-video-filter="Historias"
+                    >
+                        Historias
+                    </button>
+
+                    <button
+                        class="video-filter"
+                        type="button"
+                        data-video-filter="Comunidad"
+                    >
+                        Comunidad
+                    </button>
+
+                    <button
+                        class="video-filter"
+                        type="button"
+                        data-video-filter="Eventos"
+                    >
+                        Eventos
+                    </button>
+
+                    <button
+                        class="video-filter"
+                        type="button"
+                        data-video-filter="Inspiración"
+                    >
+                        Inspiración
+                    </button>
+
+                </div>
+
+
+                <div class="video-grid">
+
+                    <article
+                        class="video-card"
+                        data-video-type="Historias"
+                    >
+
+                        <div class="video-placeholder">
+
+                            <span>▶</span>
+
+                            <strong>
+                                Historia real
+                            </strong>
+
+                            <small>
+                                Próximamente
+                            </small>
+
+                        </div>
+
+                    </article>
+
+
+                    <article
+                        class="video-card"
+                        data-video-type="Comunidad"
+                    >
+
+                        <div class="video-placeholder">
+
+                            <span>▶</span>
+
+                            <strong>
+                                Comunidad
+                            </strong>
+
+                            <small>
+                                Próximamente
+                            </small>
+
+                        </div>
+
+                    </article>
+
+
+                    <article
+                        class="video-card"
+                        data-video-type="Eventos"
+                    >
+
+                        <div class="video-placeholder">
+
+                            <span>▶</span>
+
+                            <strong>
+                                Eventos
+                            </strong>
+
+                            <small>
+                                Próximamente
+                            </small>
+
+                        </div>
+
+                    </article>
+
+
+                    <article
+                        class="video-card"
+                        data-video-type="Inspiración"
+                    >
+
+                        <div class="video-placeholder">
+
+                            <span>▶</span>
+
+                            <strong>
+                                Inspiración
+                            </strong>
+
+                            <small>
+                                Próximamente
+                            </small>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- EXPERIENCIAS -->
+
+        <section
+            class="mv-section experiences-section"
+            id="experiencias"
+        >
+
+            <div class="mv-container">
+
+                <div class="section-heading">
+
+                    <span class="section-eyebrow">
+                        EXPERIENCIAS
+                    </span>
+
+                    <h2>
+                        Hay momentos que
+                        <span>se viven juntos.</span>
+                    </h2>
+
+                    <p>
+                        Encuentros, actividades y experiencias
+                        para aprender, compartir y crecer.
+                    </p>
+
+                </div>
+
+
+                <div class="experience-filters">
+
+                    <button
+                        class="experience-filter active"
+                        type="button"
+                        data-experience-filter="Todos"
+                    >
+                        Todos
+                    </button>
+
+                    <button
+                        class="experience-filter"
+                        type="button"
+                        data-experience-filter="Semanales"
+                    >
+                        Semanales
+                    </button>
+
+                    <button
+                        class="experience-filter"
+                        type="button"
+                        data-experience-filter="Mensuales"
+                    >
+                        Mensuales
+                    </button>
+
+                    <button
+                        class="experience-filter"
+                        type="button"
+                        data-experience-filter="Pasantías"
+                    >
+                        Pasantías
+                    </button>
+
+                    <button
+                        class="experience-filter"
+                        type="button"
+                        data-experience-filter="BIG POWER"
+                    >
+                        BIG POWER
+                    </button>
+
+                    <button
+                        class="experience-filter"
+                        type="button"
+                        data-experience-filter="Mujeres"
+                    >
+                        Mujeres
+                    </button>
+
+                    <button
+                        class="experience-filter"
+                        type="button"
+                        data-experience-filter="Especiales"
+                    >
+                        Especiales
+                    </button>
+
+                </div>
+
+
+                <div class="experience-grid">
+
+                    <article
+                        class="experience-card"
+                        data-experience-type="Semanales"
+                    >
+                        <span>PRÓXIMAMENTE</span>
+
+                        <h3>
+                            Encuentros semanales
+                        </h3>
+
+                        <p>
+                            Espacio para aprender,
+                            compartir y conectar.
+                        </p>
+                    </article>
+
+
+                    <article
+                        class="experience-card"
+                        data-experience-type="Mensuales"
+                    >
+                        <span>PRÓXIMAMENTE</span>
+
+                        <h3>
+                            Experiencias mensuales
+                        </h3>
+
+                        <p>
+                            Actividades para vivir
+                            MAUVITALITY en comunidad.
+                        </p>
+                    </article>
+
+
+                    <article
+                        class="experience-card"
+                        data-experience-type="Pasantías"
+                    >
+                        <span>PRÓXIMAMENTE</span>
+
+                        <h3>
+                            Pasantías
+                        </h3>
+
+                        <p>
+                            Conoce nuevas experiencias
+                            desde dentro.
+                        </p>
+                    </article>
+
+
+                    <article
+                        class="experience-card"
+                        data-experience-type="BIG POWER"
+                    >
+                        <span>PRÓXIMAMENTE</span>
+
+                        <h3>
+                            BIG POWER
+                        </h3>
+
+                        <p>
+                            Una experiencia especial
+                            de comunidad.
+                        </p>
+                    </article>
+
+
+                    <article
+                        class="experience-card"
+                        data-experience-type="Mujeres"
+                    >
+                        <span>PRÓXIMAMENTE</span>
+
+                        <h3>
+                            Experiencias para mujeres
+                        </h3>
+
+                        <p>
+                            Espacios pensados para
+                            compartir y crecer.
+                        </p>
+                    </article>
+
+
+                    <article
+                        class="experience-card"
+                        data-experience-type="Especiales"
+                    >
+                        <span>PRÓXIMAMENTE</span>
+
+                        <h3>
+                            Eventos especiales
+                        </h3>
+
+                        <p>
+                            Momentos que merecen
+                            ser vividos juntos.
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- COMUNIDAD -->
+
+        <section
+            class="mv-section community-section"
+            id="comunidad"
+        >
+
+            <div class="mv-container">
+
+                <div class="community-grid">
+
+                    <div class="community-content">
+
+                        <span class="section-eyebrow">
+                            COMUNIDAD
+                        </span>
+
+                        <h2>
+                            Una comunidad crece
+                            <span>cuando sus personas crecen.</span>
+                        </h2>
+
+                        <p>
+                            MAUVITALITY también vive en las conversaciones,
+                            las reuniones, las familias, las actividades
+                            y los momentos que compartimos.
+                        </p>
+
+                        <div class="community-values">
+
+                            <span>Aprender</span>
+                            <span>Reflexionar</span>
+                            <span>Compartir</span>
+                            <span>Crecer</span>
+                            <span>Progresar</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="community-gallery">
+
+                        <div class="community-photo large">
+
+                            <span>
+                                FOTO REAL
+                            </span>
+
+                            <small>
+                                Próximamente
+                            </small>
+
+                        </div>
+
+                        <div class="community-photo">
+
+                            <span>
+                                FOTO REAL
+                            </span>
+
+                            <small>
+                                Próximamente
+                            </small>
+
+                        </div>
+
+                        <div class="community-photo">
+
+                            <span>
+                                VIDEO
+                            </span>
+
+                            <small>
+                                Próximamente
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ANFITRIONES -->
+
+        <section
+            class="mv-section hosts-section"
+            id="anfitriones"
+        >
+
+            <div class="mv-container">
+
+                <div class="section-heading">
+
+                    <span class="section-eyebrow">
+                        PERSONAS
+                    </span>
+
+                    <h2>
+                        Detrás de MAUVITALITY
+                        <span>hay personas.</span>
+                    </h2>
+
+                    <p>
+                        Historias, experiencias y personas
+                        que ayudan a construir esta comunidad.
+                    </p>
+
+                </div>
+
+
+                <div class="hosts-grid">
+
+                    <article class="host-card">
+
+                        <div class="host-photo">
+
+                            <span>
+                                FOTO REAL
+                            </span>
+
+                        </div>
+
+                        <div>
+
+                            <span>
+                                PRÓXIMAMENTE
+                            </span>
+
+                            <h3>
+                                Conoce a nuestra comunidad
+                            </h3>
+
+                            <p>
+                                Aquí conocerás las historias
+                                de quienes acompañan y forman
+                                parte de MAUVITALITY.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="host-card">
+
+                        <div class="host-photo">
+
+                            <span>
+                                FOTO REAL
+                            </span>
+
+                        </div>
+
+                        <div>
+
+                            <span>
+                                PRÓXIMAMENTE
+                            </span>
+
+                            <h3>
+                                Historias que inspiran
+                            </h3>
+
+                            <p>
+                                Personas reales compartiendo
+                                su experiencia.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- HERRAMIENTAS -->
+
+        <section
+            class="mv-section tools-section"
+            id="herramientas"
+        >
+
+            <div class="mv-container">
+
+                <div class="section-heading">
+
+                    <span class="section-eyebrow">
+                        HERRAMIENTAS
+                    </span>
+
+                    <h2>
+                        La persona es el centro.
+                        <span>La herramienta acompaña.</span>
+                    </h2>
+
+                    <p>
+                        Productos, alimentos, actividades y recursos
+                        pueden formar parte del camino cuando tienen
+                        sentido para cada persona.
+                    </p>
+
+                </div>
+
+
+                <div class="tools-grid">
+
+                    <!-- 01 — NUTRICIÓN -->
+<!-- =========================
+     HERRAMIENTA 01 · NUTRICIÓN
+     ========================= -->
+
+<article class="tool-card tool-card-nutrition" id="tool-nutrition">
+
+    <div class="tool-card-header">
+
+        <span>01</span>
+
+        <h3>Nutrición</h3>
+
+        <p>
+            Alimentación, hidratación y ayudas coadyuvantes
+            para acompañar un estilo de vida saludable.
+        </p>
+
+        <button
+            type="button"
+            class="tool-expand-button"
+            id="nutrition-toggle"
+            aria-expanded="false"
+            aria-controls="nutrition-content"
+        >
+            <span>Conoce esta herramienta</span>
+            <span class="tool-expand-icon">+</span>
+        </button>
+
+    </div>
+
+
+    <div
+        class="tool-expand-content"
+        id="nutrition-content"
+        hidden
+    >
+
+        <div class="nutrition-intro">
+
+            <span class="profile-kicker">
+                NUTRICIÓN · MAUVITALITY
+            </span>
+
+            <h4>
+                Alimentar también es parte del bienestar.
+            </h4>
+
+            <p>
+                La nutrición forma parte de nuestro camino de bienestar.
+                En MAUVITALITY buscamos acompañarte con información,
+                hábitos y opciones que puedan complementar una alimentación
+                equilibrada y un estilo de vida saludable.
+            </p>
+
+            <p>
+                Los productos y preparaciones que encontrarás aquí son
+                <strong>ayudas coadyuvantes</strong>; no sustituyen una
+                alimentación variada ni la valoración de profesionales
+                cuando sea necesaria.
+            </p>
+
+        </div>
+
+
+        <div class="nutrition-areas">
+
+            <h5>¿Qué encontrarás?</h5>
+
+            <div class="nutrition-area-grid">
+
+                <div class="nutrition-area">
+
+                    <strong>Alimentación</strong>
+
+                    <span>
+                        Ideas y herramientas para construir mejores
+                        hábitos alrededor de la alimentación.
+                    </span>
+
+                </div>
+
+
+                <div class="nutrition-area">
+
+                    <strong>Hidratación</strong>
+
+                    <span>
+                        Opciones para acompañar una adecuada hidratación
+                        durante el día y la actividad física.
+                    </span>
+
+                </div>
+
+
+                <div class="nutrition-area">
+
+                    <strong>Ayudas coadyuvantes</strong>
+
+                    <span>
+                        Productos nutricionales que pueden complementar
+                        determinados objetivos dentro de un estilo de vida saludable.
+                    </span>
+
+                </div>
+
+
+                <div class="nutrition-area">
+
+                    <strong>Preparaciones</strong>
+
+                    <span>
+                        Alternativas prácticas y funcionales para disfrutar
+                        de la nutrición de una manera diferente.
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="nutrition-products">
+
+            <h5>Lo que estamos desarrollando</h5>
+
+            <div class="nutrition-product-grid">
+
+                <div class="nutrition-product">
+
+                    <span>01</span>
+
+                    <h5>
+                        Gelatina Fit de Proteína
+                    </h5>
+
+                    <p>
+                        Una alternativa práctica que combina
+                        preparación y aporte nutricional.
+                    </p>
+
+                </div>
+
+
+                <div class="nutrition-product">
+
+                    <span>02</span>
+
+                    <h5>
+                        Beverage Mix de Frutas
+                    </h5>
+
+                    <p>
+                        Una opción refrescante con aporte de proteína
+                        para acompañar diferentes momentos del día.
+                    </p>
+
+                </div>
+
+
+                <div class="nutrition-product">
+
+                    <span>03</span>
+
+                    <h5>
+                        Preparaciones funcionales
+                    </h5>
+
+                    <p>
+                        Nuevas propuestas de alimentos y bebidas
+                        que iremos incorporando a MAUVITALITY.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="nutrition-program">
+
+            <span>PROGRAMA</span>
+
+            <h5>
+                Chupa Panza
+            </h5>
+
+            <p>
+                Programa de acompañamiento enfocado en hábitos,
+                alimentación y herramientas nutricionales.
+            </p>
+
+            <p>
+                La propuesta puede incluir diferentes productos y
+                actividades de acompañamiento según el proceso de cada persona.
+            </p>
+
+        </div>
+
+
+        <div class="nutrition-cta">
+
+            <p>
+                ¿Quieres conocer nuestras opciones de nutrición?
+            </p>
+
+            <a
+                href="#contacto"
+                class="movement-contact-button"
+            >
+                Conocer más
+            </a>
+
+        </div>
+
+    </div>
+
+</article>
+
+<!-- ======== FIN HERRAMIENTA 01 · NUTRICIÓN ======== -->
+
+
+                    <article class="tool-card tool-card-movement" id="tool-movement">
+    <div class="tool-card-header">
+        <span>02</span>
+
+        <h3>Movimiento & Recuperación</h3>
+
+        <p>
+            Actividad física, movilidad, fisioterapia
+            y recuperación funcional.
+        </p>
+
+        <button
+            type="button"
+            class="tool-expand-button"
+            id="movement-toggle"
+            aria-expanded="false"
+            aria-controls="movement-content"
+        >
+            <span>Conoce esta herramienta</span>
+            <span class="tool-expand-icon">+</span>
+        </button>
+    </div>
+
+    <div
+        class="tool-expand-content"
+        id="movement-content"
+        hidden
+    >
+
+        <div class="movement-profile">
+
+            <div class="movement-profile-image">
+                <div class="profile-placeholder">
+                    Foto de Genoveva
+                </div>
+            </div>
+
+            <div class="movement-profile-info">
+
+                <span class="profile-kicker">
+                    COLABORADORA MAUVITALITY
+                </span>
+
+                <h4>Genoveva</h4>
+
+                <p class="profile-role">
+                    Fisioterapeuta · Colaboradora MAUVITALITY
+                </p>
+
+                <p>
+                    El movimiento también forma parte del bienestar.
+                    La fisioterapia puede acompañar procesos de movilidad,
+                    recuperación funcional y cuidado del cuerpo,
+                    respetando las necesidades y características de cada persona.
+                </p>
+
+                <p>
+                    En MAUVITALITY integramos el movimiento y la recuperación
+                    como parte de un camino de bienestar más completo.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="movement-areas">
+
+            <h5>Áreas de acompañamiento</h5>
+
+            <div class="movement-area-grid">
+
+                <div class="movement-area">
+                    <strong>Movilidad</strong>
+                    <span>Trabajo orientado a recuperar y mejorar el movimiento.</span>
+                </div>
+
+                <div class="movement-area">
+                    <strong>Recuperación funcional</strong>
+                    <span>Acompañamiento durante diferentes procesos de recuperación.</span>
+                </div>
+
+                <div class="movement-area">
+                    <strong>ATM</strong>
+                    <span>Trabajo relacionado con movilidad, función y recuperación de la articulación.</span>
+                </div>
+
+                <div class="movement-area">
+                    <strong>Educación corporal</strong>
+                    <span>Herramientas para comprender mejor el movimiento y el propio cuerpo.</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="movement-media">
+
+            <div class="movement-media-block">
+                <span>01</span>
+                <h5>Experiencias</h5>
+                <p>
+                    Aquí podremos mostrar experiencias reales
+                    y procesos de recuperación autorizados.
+                </p>
+            </div>
+
+            <div class="movement-media-block">
+                <span>02</span>
+                <h5>Videos</h5>
+                <p>
+                    Contenido educativo y demostrativo relacionado
+                    con movimiento, movilidad y recuperación.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="movement-cta">
+
+            <p>
+                ¿Quieres conocer el trabajo de Genoveva?
+            </p>
+
+            <a
+                href="#contacto"
+                class="movement-contact-button"
+            >
+                Contactar
+            </a>
+
+        </div>
+
+    </div>
+</article>
+
+
+                    <!-- =====================================================
+     INICIO · HERRAMIENTA 03
+     DESCANSO
+     ===================================================== -->
+
+<article class="tool-card tool-card-rest" id="tool-rest">
+
+    <div class="tool-card-header">
+
+        <span>03</span>
+
+        <h3>Descanso</h3>
+
+        <p>
+            Hábitos y prácticas para favorecer recuperación,
+            descanso y equilibrio.
+        </p>
+
+        <button
+            type="button"
+            class="tool-expand-button"
+            id="rest-toggle"
+            aria-expanded="false"
+            aria-controls="rest-content"
+        >
+            <span>Conoce esta herramienta</span>
+            <span class="tool-expand-icon">+</span>
+        </button>
+
+    </div>
+
+
+    <div
+        class="tool-expand-content"
+        id="rest-content"
+        hidden
+    >
+
+        <div class="rest-intro">
+
+            <span class="profile-kicker">
+                DESCANSO · MAUVITALITY
+            </span>
+
+            <h4>
+                Descansar también es avanzar.
+            </h4>
+
+            <p>
+                El descanso forma parte de nuestra capacidad para
+                recuperar energía, mantener buenos hábitos y afrontar
+                nuestro día con mayor equilibrio.
+            </p>
+
+            <p>
+                En MAUVITALITY queremos ayudarte a observar tus hábitos
+                de descanso y descubrir pequeñas acciones que puedan
+                favorecer una mejor rutina.
+            </p>
+
+        </div>
+
+
+        <div class="rest-areas">
+
+            <h5>¿Qué podemos explorar?</h5>
+
+            <div class="rest-area-grid">
+
+                <div class="rest-area">
+
+                    <strong>Rutinas de sueño</strong>
+
+                    <span>
+                        Hábitos que pueden ayudarte a construir
+                        una rutina de descanso más ordenada.
+                    </span>
+
+                </div>
+
+
+                <div class="rest-area">
+
+                    <strong>Desconexión</strong>
+
+                    <span>
+                        Espacios para disminuir estímulos y preparar
+                        cuerpo y mente para descansar.
+                    </span>
+
+                </div>
+
+
+                <div class="rest-area">
+
+                    <strong>Recuperación</strong>
+
+                    <span>
+                        Comprender el valor del descanso dentro de
+                        un proceso de bienestar y recuperación.
+                    </span>
+
+                </div>
+
+
+                <div class="rest-area">
+
+                    <strong>Equilibrio diario</strong>
+
+                    <span>
+                        Encontrar un mejor balance entre actividad,
+                        responsabilidades y momentos de pausa.
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="rest-practices">
+
+            <h5>
+                Pequeñas prácticas
+            </h5>
+
+            <div class="rest-practice-list">
+
+                <div class="rest-practice">
+
+                    <span>01</span>
+
+                    <div>
+
+                        <strong>
+                            Preparar el ambiente
+                        </strong>
+
+                        <p>
+                            Crear un espacio tranquilo y cómodo
+                            puede facilitar el momento de descanso.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="rest-practice">
+
+                    <span>02</span>
+
+                    <div>
+
+                        <strong>
+                            Crear una rutina
+                        </strong>
+
+                        <p>
+                            Mantener horarios relativamente constantes
+                            puede ayudar a organizar el descanso.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="rest-practice">
+
+                    <span>03</span>
+
+                    <div>
+
+                        <strong>
+                            Dar espacio a la pausa
+                        </strong>
+
+                        <p>
+                            El descanso no solamente ocurre durante
+                            la noche. También podemos aprender a hacer pausas.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="rest-note">
+
+            <span>MAUVITALITY</span>
+
+            <h5>
+                Tu bienestar también necesita momentos de pausa.
+            </h5>
+
+            <p>
+                Explora, prueba y encuentra las prácticas que mejor
+                se adapten a tu realidad.
+            </p>
+
+        </div>
+
+
+        <div class="rest-cta">
+
+            <p>
+                ¿Quieres seguir explorando tu bienestar?
+            </p>
+
+            <a
+                href="#aprendizaje"
+                class="movement-contact-button"
+            >
+                Seguir explorando
+            </a>
+
+        </div>
+
+    </div>
+
+</article>
+
+<!-- =====================================================
+     FIN · HERRAMIENTA 03
+     DESCANSO
+     ===================================================== -->
+
+
+                    <!-- =====================================================
+     INICIO · HERRAMIENTA 04
+     APRENDIZAJE
+     ===================================================== -->
+
+<article class="tool-card tool-card-learning" id="tool-learning">
+
+    <div class="tool-card-header">
+
+        <span>04</span>
+
+        <h3>Aprendizaje</h3>
+
+        <p>
+            Conocimiento para comprender mejor tu bienestar.
+        </p>
+
+        <button
+            type="button"
+            class="tool-expand-button"
+            id="learning-toggle"
+            aria-expanded="false"
+            aria-controls="learning-content"
+        >
+            <span>Conoce esta herramienta</span>
+            <span class="tool-expand-icon">+</span>
+        </button>
+
+    </div>
+
+
+    <div
+        class="tool-expand-content"
+        id="learning-content"
+        hidden
+    >
+
+        <div class="learning-intro">
+
+            <span class="profile-kicker">
+                APRENDIZAJE · MAUVITALITY
+            </span>
+
+            <h4>
+                Comprender también es parte del bienestar.
+            </h4>
+
+            <p>
+                Cuando conocemos mejor nuestro cuerpo, nuestra mente,
+                nuestras emociones y nuestros hábitos, podemos tomar
+                decisiones más conscientes sobre nuestro camino.
+            </p>
+
+            <p>
+                En MAUVITALITY queremos convertir el conocimiento
+                en una herramienta práctica, cercana y fácil de aplicar
+                en la vida cotidiana.
+            </p>
+
+        </div>
+
+
+        <div class="learning-areas">
+
+            <h5>
+                ¿Qué vamos a aprender?
+            </h5>
+
+            <div class="learning-area-grid">
+
+                <div class="learning-area">
+
+                    <strong>Cuerpo</strong>
+
+                    <span>
+                        Información para comprender mejor el movimiento,
+                        la recuperación y las necesidades de nuestro cuerpo.
+                    </span>
+
+                </div>
+
+
+                <div class="learning-area">
+
+                    <strong>Mente</strong>
+
+                    <span>
+                        Recursos para desarrollar una mejor comprensión
+                        de nuestros pensamientos, hábitos y decisiones.
+                    </span>
+
+                </div>
+
+
+                <div class="learning-area">
+
+                    <strong>Emociones</strong>
+
+                    <span>
+                        Espacios de reflexión para reconocer nuestras
+                        emociones y aprender a relacionarnos mejor con ellas.
+                    </span>
+
+                </div>
+
+
+                <div class="learning-area">
+
+                    <strong>Hábitos</strong>
+
+                    <span>
+                        Conocimientos y pequeñas acciones que pueden
+                        ayudarnos a construir un estilo de vida más consciente.
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="learning-content-grid">
+
+            <div class="learning-content-card">
+
+                <span>01</span>
+
+                <h5>
+                    Artículos
+                </h5>
+
+                <p>
+                    Contenido sencillo para aprender y reflexionar
+                    sobre diferentes aspectos del bienestar.
+                </p>
+
+            </div>
+
+
+            <div class="learning-content-card">
+
+                <span>02</span>
+
+                <h5>
+                    Videos educativos
+                </h5>
+
+                <p>
+                    Material audiovisual para explicar conceptos
+                    de una manera práctica y cercana.
+                </p>
+
+            </div>
+
+
+            <div class="learning-content-card">
+
+                <span>03</span>
+
+                <h5>
+                    Guías prácticas
+                </h5>
+
+                <p>
+                    Recursos que podrás consultar y aplicar
+                    progresivamente en tu vida cotidiana.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="learning-principle">
+
+            <span>APRENDER · APLICAR · AVANZAR</span>
+
+            <h5>
+                El conocimiento se vuelve valioso cuando podemos llevarlo a nuestra vida.
+            </h5>
+
+            <p>
+                Por eso buscamos que cada contenido de MAUVITALITY
+                sea comprensible, útil y conectado con la realidad
+                de cada persona.
+            </p>
+
+        </div>
+
+
+        <div class="learning-cta">
+
+            <p>
+                ¿Quieres descubrir nuestros contenidos?
+            </p>
+
+            <a
+                href="#videos"
+                class="movement-contact-button"
+            >
+                Explorar contenido
+            </a>
+
+        </div>
+
+    </div>
+
+</article>
+
+<!-- =====================================================
+     FIN · HERRAMIENTA 04
+     APRENDIZAJE
+     ===================================================== -->
+
+
+                   <!-- =====================================================
+     INICIO · HERRAMIENTA 05
+     RECURSOS
+     ===================================================== -->
+
+<article class="tool-card tool-card-resources" id="tool-resources">
+
+    <div class="tool-card-header">
+
+        <span>05</span>
+
+        <h3>Recursos</h3>
+
+        <p>
+            Profesionales, servicios, materiales y herramientas
+            que puedan aportar valor.
+        </p>
+
+        <button
+            type="button"
+            class="tool-expand-button"
+            id="resources-toggle"
+            aria-expanded="false"
+            aria-controls="resources-content"
+        >
+            <span>Conoce esta herramienta</span>
+            <span class="tool-expand-icon">+</span>
+        </button>
+
+    </div>
+
+
+    <div
+        class="tool-expand-content"
+        id="resources-content"
+        hidden
+    >
+
+        <div class="resources-intro">
+
+            <span class="profile-kicker">
+                RECURSOS · MAUVITALITY
+            </span>
+
+            <h4>
+                No tienes que recorrer tu camino solo.
+            </h4>
+
+            <p>
+                El bienestar también puede construirse con las personas,
+                servicios y herramientas adecuadas en cada etapa.
+            </p>
+
+            <p>
+                En MAUVITALITY queremos reunir recursos que puedan
+                aportar valor y facilitar el acceso a información,
+                profesionales y experiencias de calidad.
+            </p>
+
+        </div>
+
+
+        <div class="resources-areas">
+
+            <h5>
+                ¿Qué encontrarás?
+            </h5>
+
+            <div class="resources-area-grid">
+
+                <div class="resources-area">
+
+                    <strong>Profesionales</strong>
+
+                    <span>
+                        Personas con conocimientos y experiencia
+                        que puedan acompañar diferentes dimensiones
+                        del bienestar.
+                    </span>
+
+                </div>
+
+
+                <div class="resources-area">
+
+                    <strong>Servicios</strong>
+
+                    <span>
+                        Servicios que complementen el camino de
+                        bienestar y puedan responder a necesidades concretas.
+                    </span>
+
+                </div>
+
+
+                <div class="resources-area">
+
+                    <strong>Materiales</strong>
+
+                    <span>
+                        Guías, contenidos y materiales que ayuden
+                        a aprender, reflexionar y avanzar.
+                    </span>
+
+                </div>
+
+
+                <div class="resources-area">
+
+                    <strong>Herramientas</strong>
+
+                    <span>
+                        Recursos prácticos que puedan facilitar
+                        la organización y aplicación de buenos hábitos.
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="resources-network">
+
+            <div class="resources-network-header">
+
+                <span>
+                    RED MAUVITALITY
+                </span>
+
+                <h5>
+                    Personas que aportan valor.
+                </h5>
+
+                <p>
+                    Esta sección irá creciendo progresivamente
+                    con profesionales y recursos seleccionados
+                    para nuestra comunidad.
+                </p>
+
+            </div>
+
+
+            <div class="resources-profile-grid">
+
+                <div class="resources-profile">
+
+                    <span>01</span>
+
+                    <h5>
+                        Profesionales
+                    </h5>
+
+                    <p>
+                        Espacio para presentar a personas que
+                        aporten conocimientos y experiencia.
+                    </p>
+
+                </div>
+
+
+                <div class="resources-profile">
+
+                    <span>02</span>
+
+                    <h5>
+                        Colaboradores
+                    </h5>
+
+                    <p>
+                        Personas que forman parte del ecosistema
+                        MAUVITALITY y aportan desde su área.
+                    </p>
+
+                </div>
+
+
+                <div class="resources-profile">
+
+                    <span>03</span>
+
+                    <h5>
+                        Recursos recomendados
+                    </h5>
+
+                    <p>
+                        Materiales y herramientas que puedan
+                        ser útiles para nuestra comunidad.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="resources-principle">
+
+            <span>
+                PERSONAS · CONOCIMIENTO · HERRAMIENTAS
+            </span>
+
+            <h5>
+                La persona es el centro.
+            </h5>
+
+            <p>
+                Las herramientas y los profesionales acompañan
+                su camino. MAUVITALITY busca conectar esos recursos
+                de una manera sencilla, humana y útil.
+            </p>
+
+        </div>
+
+
+        <div class="resources-cta">
+
+            <p>
+                ¿Tienes un recurso que pueda aportar valor?
+            </p>
+
+            <a
+                href="#contacto"
+                class="movement-contact-button"
+            >
+                Contáctanos
+            </a>
+
+        </div>
+
+    </div>
+
+</article>
+
+<!-- =====================================================
+     FIN · HERRAMIENTA 05
+     RECURSOS
+     ===================================================== -->
+
+                </div>
+
+
+                <div class="tools-principle">
+
+                    <strong>
+                        La persona es el centro.
+                        El producto es una herramienta.
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CTA FINAL -->
+
+        <section class="final-cta">
+
+            <div class="mv-container">
+
+                <span class="section-eyebrow">
+                    TU PRÓXIMO PASO
+                </span>
+
+                <h2>
+                    Tal vez este sea
+                    <span>tu momento para comenzar.</span>
+                </h2>
+
+                <p>
+                    No necesitas tener todo resuelto.
+                    Solo necesitas decidir desde dónde
+                    quieres empezar.
+                </p>
+
+                <button
+    id="final-personal-button"
+    class="btn btn-primary"
+    type="button"
+>
+    Volver a mi punto de partida
+</button>
+
+
+        <!-- CONTACTO -->
+
+        <section
+            class="contact-section"
+            id="contacto"
+        >
+
+            <div class="mv-container contact-grid">
+
+                <div>
+
+                    <span class="section-eyebrow">
+                        CONEXIÓN
+                    </span>
+
+                    <h2>
+                        Sigamos
+                        <span>en contacto.</span>
+                    </h2>
+
+                    <p>
+                        Muy pronto encontrarás aquí nuestros canales
+                        de contacto, redes sociales, ubicación y
+                        próximas experiencias.
+                    </p>
+
+                </div>
+
+
+                <div class="contact-items">
+
+                    <div class="contact-item">
+
+                        <span>
+                            WhatsApp
+                        </span>
+
+                        <strong>
+                            Próximamente
+                        </strong>
+
+                    </div>
+
+
+                    <div class="contact-item">
+
+                        <span>
+                            Redes sociales
+                        </span>
+
+                        <strong>
+                            Próximamente
+                        </strong>
+
+                    </div>
+
+
+                    <div class="contact-item">
+
+                        <span>
+                            Ubicación
+                        </span>
+
+                        <strong>
+                            Próximamente
+                        </strong>
+
+                    </div>
+
+
+                    <div class="contact-item">
+
+                        <span>
+                            Eventos
+                        </span>
+
+                        <strong>
+                            Próximamente
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="mv-footer">
+
+        <div class="mv-container footer-grid">
+
+            <div>
+
+                <div class="footer-brand">
+                    MAUVITALITY
+                </div>
+
+                <p>
+                    Bienestar que empieza contigo.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="#nosotros">
+                    Nosotros
+                </a>
+
+                <a href="#dimensiones">
+                    Dimensiones
+                </a>
+
+                <a href="#historias">
+                    Historias
+                </a>
+
+                <a href="#experiencias">
+                    Experiencias
+                </a>
+
+                <a href="#comunidad">
+                    Comunidad
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+                El bienestar no es una meta.
+                Es una forma de vivir.
+            </span>
+
+            <span>
+                © MAUVITALITY
+            </span>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
 
 </body>
+
 </html>

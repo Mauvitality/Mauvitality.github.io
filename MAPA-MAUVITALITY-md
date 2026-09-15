@@ -1,0 +1,592 @@
+# 🌿 MAUVITALITY
+
+## Mapa técnico del proyecto
+
+**Propósito:**
+Documento de referencia para saber qué contiene cada archivo, dónde está cada sección y qué bloques debemos tocar cuando hagamos futuras modificaciones.
+
+> **Regla principal:**
+> **LO QUE FUNCIONA, NO SE TOCA.**
+> Cuando sea necesario modificar algo, se trabaja únicamente sobre el bloque correspondiente.
+
+---
+
+# 1. ESTRUCTURA PRINCIPAL
+
+El proyecto actualmente se divide principalmente en:
+
+```text
+MAUVITALITY
+│
+├── index.html
+├── styles.css
+└── script.js
+```
+
+### `index.html`
+
+Contiene la estructura, textos, botones, tarjetas y secciones visibles de MAUVITALITY.
+
+### `styles.css`
+
+Contiene todo el diseño visual:
+
+* colores
+* tamaños
+* espacios
+* tarjetas
+* botones
+* animaciones
+* versión móvil
+* elementos desplegables
+
+### `script.js`
+
+Contiene la lógica y las interacciones:
+
+* pantalla inicial
+* encuesta
+* personalización
+* navegación
+* filtros
+* elementos interactivos
+* herramientas desplegables
+
+---
+
+# 2. ESTRUCTURA GENERAL DE LA PÁGINA
+
+Actualmente MAUVITALITY sigue aproximadamente este recorrido:
+
+```text
+PANTALLA DE BIENVENIDA
+        ↓
+ENCUESTA INICIAL
+        ↓
+PUNTO DE PARTIDA PERSONALIZADO
+        ↓
+HERO PRINCIPAL
+        ↓
+NOSOTROS
+        ↓
+DIMENSIONES
+        ↓
+HISTORIAS
+        ↓
+VIDEOS
+        ↓
+EXPERIENCIAS
+        ↓
+COMUNIDAD
+        ↓
+ANFITRIONES
+        ↓
+HERRAMIENTAS
+        ↓
+LLAMADO A LA ACCIÓN
+        ↓
+CONTACTO / FOOTER
+```
+
+---
+
+# 3. CONCEPTO DE MAUVITALITY
+
+MAUVITALITY no está planteada como una simple tienda de productos.
+
+Es una marca/comunidad de bienestar integral.
+
+## Centro del concepto
+
+**Bienestar para la persona completa.**
+
+La persona es el centro.
+
+Las herramientas y los profesionales acompañan su camino.
+
+---
+
+# 4. LAS CINCO DIMENSIONES
+
+MAUVITALITY trabaja cinco dimensiones:
+
+```text
+01 · FÍSICO
+02 · MENTAL
+03 · EMOCIONAL
+04 · FAMILIAR
+05 · FINANCIERO
+```
+
+Estas dimensiones representan el enfoque integral de la marca.
+
+---
+
+# 5. LAS CINCO HERRAMIENTAS
+
+La sección `#herramientas` contiene cinco tarjetas.
+
+Todas utilizan actualmente el mismo sistema:
+
+```text
+TARJETA COMPACTA
+       ↓
+CONOCE ESTA HERRAMIENTA
+       ↓
+CLICK
+       ↓
+CONTENIDO DESPLEGABLE
+       ↓
+CLICK
+       ↓
+SE CIERRA
+```
+
+---
+
+## 01 · NUTRICIÓN
+
+### Identificadores principales
+
+```text
+tool-nutrition
+nutrition-toggle
+nutrition-content
+```
+
+### Contenido
+
+Incluye:
+
+* Alimentación
+* Hidratación
+* Ayudas coadyuvantes
+* Preparaciones
+* Gelatina Fit de Proteína
+* Beverage Mix de Frutas
+* Preparaciones funcionales
+* Programa Chupa Panza
+
+### Concepto
+
+Los productos se presentan como:
+
+**ayudas coadyuvantes**
+
+No como curas ni como protagonistas del bienestar.
+
+---
+
+# 6. 02 · MOVIMIENTO & RECUPERACIÓN
+
+### Identificadores
+
+```text
+tool-movement
+movement-toggle
+movement-content
+```
+
+### Contenido
+
+Incluye:
+
+* Perfil de Genoveva
+* Fisioterapia
+* Movilidad
+* Recuperación funcional
+* ATM
+* Educación corporal
+* Experiencias
+* Videos
+* Contacto
+
+### Rol
+
+```text
+Genoveva
+Fisioterapeuta · Colaboradora MAUVITALITY
+```
+
+---
+
+# 7. 03 · DESCANSO
+
+### Identificadores
+
+```text
+tool-rest
+rest-toggle
+rest-content
+```
+
+### Contenido
+
+Incluye:
+
+* Rutinas de sueño
+* Desconexión
+* Recuperación
+* Equilibrio diario
+* Pequeñas prácticas
+* Preparación del ambiente
+* Rutinas
+* Pausas
+
+### Concepto
+
+**Descansar también es avanzar.**
+
+---
+
+# 8. 04 · APRENDIZAJE
+
+### Identificadores
+
+```text
+tool-learning
+learning-toggle
+learning-content
+```
+
+### Contenido
+
+Incluye:
+
+* Cuerpo
+* Mente
+* Emociones
+* Hábitos
+* Artículos
+* Videos educativos
+* Guías prácticas
+
+### Concepto
+
+**Comprender también es parte del bienestar.**
+
+---
+
+# 9. 05 · RECURSOS
+
+### Identificadores
+
+```text
+tool-resources
+resources-toggle
+resources-content
+```
+
+### Contenido
+
+Incluye:
+
+* Profesionales
+* Servicios
+* Materiales
+* Herramientas
+* Red MAUVITALITY
+* Colaboradores
+* Recursos recomendados
+
+### Concepto
+
+**La persona es el centro.**
+
+Las herramientas y los profesionales acompañan su camino.
+
+---
+
+# 10. ESTRUCTURA CSS DE LAS HERRAMIENTAS
+
+Todas las herramientas comparten componentes visuales.
+
+### Elementos comunes
+
+```text
+.tool-card
+.tool-card-header
+.tool-expand-button
+.tool-expand-icon
+.tool-expand-content
+```
+
+Esto es importante.
+
+No debemos crear cinco sistemas diferentes para hacer lo mismo.
+
+La base visual es compartida.
+
+---
+
+# 11. BLOQUES CSS ESPECÍFICOS
+
+Cada herramienta también tiene sus propios estilos.
+
+```text
+NUTRICIÓN
+.nutrition-*
+
+MOVIMIENTO
+.movement-*
+
+DESCANSO
+.rest-*
+
+APRENDIZAJE
+.learning-*
+
+RECURSOS
+.resources-*
+```
+
+Esto permite modificar una herramienta sin afectar directamente a las otras.
+
+---
+
+# 12. SISTEMA JAVASCRIPT
+
+Cada herramienta tiene su propio botón y contenido.
+
+```text
+nutrition-toggle
+        ↓
+nutrition-content
+
+movement-toggle
+        ↓
+movement-content
+
+rest-toggle
+        ↓
+rest-content
+
+learning-toggle
+        ↓
+learning-content
+
+resources-toggle
+        ↓
+resources-content
+```
+
+Cada sistema utiliza:
+
+```javascript
+aria-expanded
+classList.toggle("is-open")
+hidden
+```
+
+---
+
+# 13. REGLA PARA FUTUROS CAMBIOS
+
+Antes de modificar código:
+
+### PASO 1
+
+Identificar qué sección queremos cambiar.
+
+### PASO 2
+
+Identificar el archivo:
+
+```text
+Contenido → index.html
+Diseño → styles.css
+Interacción → script.js
+```
+
+### PASO 3
+
+Localizar el bloque mediante su comentario:
+
+```text
+INICIO · HERRAMIENTA XX
+...
+FIN · HERRAMIENTA XX
+```
+
+### PASO 4
+
+Modificar únicamente ese bloque.
+
+### PASO 5
+
+Probar.
+
+### PASO 6
+
+Si funciona:
+
+**NO TOCAR.**
+
+---
+
+# 14. REGLA PARA AGREGAR NUEVAS FUNCIONES
+
+Nunca debemos simplemente pegar código en cualquier lugar.
+
+Cada nueva función debe tener:
+
+```text
+INICIO · NOMBRE DE LA FUNCIÓN
+
+código
+
+FIN · NOMBRE DE LA FUNCIÓN
+```
+
+Ejemplo:
+
+```css
+/* =========================================================
+   INICIO · HERRAMIENTA 06
+   NUEVA FUNCIÓN
+   ========================================================= */
+
+...
+
+/* =========================================================
+   FIN · HERRAMIENTA 06
+   NUEVA FUNCIÓN
+   ========================================================= */
+```
+
+---
+
+# 15. REGLA PARA ENTREGAR CÓDIGO
+
+Cuando se haga una modificación:
+
+### HTML
+
+Indicar:
+
+```text
+BUSCA:
+[comienzo del bloque]
+
+REEMPLAZA TODO HASTA:
+[final del bloque]
+
+POR:
+[bloque completo]
+```
+
+### CSS
+
+Indicar:
+
+```text
+PEGA AL FINAL DE styles.css
+
+INICIO
+...
+FIN
+```
+
+### JavaScript
+
+Indicar:
+
+```text
+BUSCA EL ÚLTIMO });
+
+PEGA EL BLOQUE JUSTO ANTES.
+
+NO BORRES EL }); FINAL.
+```
+
+---
+
+# 16. FILOSOFÍA DE DESARROLLO
+
+MAUVITALITY debe crecer de manera progresiva.
+
+No queremos agregar funciones solamente porque podemos.
+
+Cada nueva función debe responder:
+
+> ¿Esto mejora realmente la experiencia de la persona?
+
+Si la respuesta es no:
+
+**no se agrega.**
+
+---
+
+# 17. ESTADO ACTUAL
+
+```text
+ESTRUCTURA GENERAL             ✅
+PANTALLA DE BIENVENIDA         ✅
+ENCUESTA                        ✅
+PERSONALIZACIÓN                 ✅
+NAVEGACIÓN                      ✅
+DIMENSIONES                     ✅
+HISTORIAS                       ✅
+VIDEOS                          ✅
+EXPERIENCIAS                    ✅
+COMUNIDAD                       ✅
+ANFITRIONES                     ✅
+
+HERRAMIENTAS
+
+01 · NUTRICIÓN                  ✅
+02 · MOVIMIENTO & RECUPERACIÓN  ✅
+03 · DESCANSO                   ✅
+04 · APRENDIZAJE                ✅
+05 · RECURSOS                   ✅
+```
+
+---
+
+# 18. PRÓXIMA ETAPA
+
+Con las cinco herramientas funcionando, la siguiente etapa NO es agregar más código inmediatamente.
+
+Primero:
+
+```text
+REVISAR
+   ↓
+PROBAR
+   ↓
+DETECTAR
+   ↓
+PULIR
+   ↓
+VOLVER A PROBAR
+```
+
+Especialmente:
+
+* computadora
+* celular
+* tablet
+* tamaños de texto
+* espacios
+* botones
+* apertura/cierre de herramientas
+* navegación
+* coherencia visual
+
+---
+
+# 19. PRINCIPIO CENTRAL DEL PROYECTO
+
+> **La persona es el centro.**
+>
+> **Las herramientas y los profesionales acompañan su camino.**
+
+MAUVITALITY busca construir un ecosistema de bienestar donde nutrición, movimiento, descanso, aprendizaje y recursos estén conectados dentro de una misma experiencia.
+
+---
+
+## REGLA DE ORO
+
+### 🌿 LO QUE FUNCIONA, NO SE TOCA.
+
+Solo modificamos lo que realmente necesite mejorar.
